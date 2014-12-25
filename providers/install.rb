@@ -20,6 +20,8 @@
 
 action :install do
   python_virtualenv new_resource.virtualenv do
+	owner new_resource.owner  	
+	groupt owner new_resource.group
     action :create
   end if new_resource.virtualenv
 
