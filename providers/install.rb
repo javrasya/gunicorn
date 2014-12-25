@@ -22,7 +22,7 @@ action :install do
   python_virtualenv new_resource.virtualenv do
   	interpreter new_resource.interpreter
   	owner new_resource.owner
-  	group new_resource.groupt
+  	group new_resource.group
     action :create
   end if new_resource.virtualenv
 
