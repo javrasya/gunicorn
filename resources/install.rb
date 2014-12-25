@@ -21,6 +21,9 @@
 actions :install
 
 attribute :virtualenv, :kind_of => String, :default => nil
+attribute :interpreter, :kind_of => [String,NilClass], :default => "python"
+attribute :owner, :kind_of => [String,NilClass], :default => nil
+attribute :group, :kind_of => [String,NilClass], :default => nil
 
 def initialize(*args)
   super
